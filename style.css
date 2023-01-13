@@ -1,0 +1,137 @@
+/* ********* google fonts *********** */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@500&display=swap");
+
+/* ********* default css *********** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-meteor-shower: #562eff;
+  --secondary-color-black: #000000;
+  --background-color-cloud-break: #f3f1ff;
+  --white-color: #fff;
+  --entan-red: #ed6b4f;
+  --gray-of-darkness: #a2a2a2;
+  --cold-gray: #9f9f9f;
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-roboto: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--background-color-cloud-break);
+  font-family: var(--ff-poppins);
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-width {
+  max-width: 87em;
+  margin: 0 auto;
+}
+
+.section-heading {
+  color: var(--primary-color-meteor-shower);
+  font-size: 2.4em;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* ********* header css *********** */
+
+header {
+  background-color: var(--primary-color-meteor-shower);
+  padding: 1.8em 0;
+}
+
+header .header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right ul {
+  display: flex;
+  gap: 2em;
+  margin-right: 3em;
+}
+
+.nav-right ul li a {
+  font-size: 1.6em;
+  color: var(--white-color);
+  text-transform: capitalize;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo img {
+  width: 4em;
+  height: 5.1em;
+}
+
+.logo a {
+  font-size: 2.4em;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+/* ********* top player and blog css *********** */
+
+.top-player-blog {
+  background-color: var(--white-color);
+  margin-top: 3.6em;
+  padding: 3em;
+  border-radius: 0.5em;
+}
+
+.top-player hr {
+  margin: 3em 0;
+  border: 1px solid #d1d1d1;
+}
+
+.top-players-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2.9em;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.player-div {
+  display: flex;
+  align-items: center;
+}
+
+.player-div span {
+  font-size: 1.8em;
+  color: var(--secondary-color-black);
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 1em;
+}
+
+.player-div img {
+  width: 5.6em;
+  height: 5.6em;
+  border-radius: 50%;
+}
