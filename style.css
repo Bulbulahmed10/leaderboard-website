@@ -13,9 +13,11 @@
 :root {
   --primary-color-meteor-shower: #562eff;
   --secondary-color-black: #000000;
+  --dynamic-black: #1e1e1e;
   --background-color-cloud-break: #f3f1ff;
   --white-color: #fff;
   --entan-red: #ed6b4f;
+  --happy-yipee-color: #ffc014;
   --gray-of-darkness: #a2a2a2;
   --cold-gray: #9f9f9f;
   --ff-poppins: "Poppins", sans-serif;
@@ -176,5 +178,96 @@ header .nav-right {
   font-size: 1.6em;
   font-weight: 500;
   margin-left: 0.2em;
-  opacity: .9;
+  opacity: 0.9;
+}
+
+/* ********* latest course css *********** */
+
+.latest-course {
+  background-color: var(--white-color);
+  border-radius: 0.5em;
+  margin-top: 2.1em;
+  margin-bottom: 2.1em;
+  padding: 3em;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.3em;
+  margin-top: 3em;
+}
+
+.course-item {
+  background-color: var(--white-color);
+  filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+  padding: 1.3em;
+  border-radius: 0.5em;
+  font-family: var(--ff-roboto);
+}
+
+.course-item img {
+  width: 224px;
+  height: 104px;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+.course-item .title-author h4 {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--dynamic-black);
+  text-transform: capitalize;
+  margin: 0.5em 0 0.3em 0;
+}
+
+.course-item .title-author a {
+  font-size: 1.5em;
+  color: var(--entan-red);
+  text-transform: capitalize;
+}
+
+.course-item .course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.9em;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+}
+
+.ratings i {
+  color: var(--happy-yipee-color);
+  font-size: 1.3em;
+}
+
+.ratings i.unfilled {
+  color: var(--cold-gray);
+}
+
+.ratings span {
+  color: var(--gray-of-darkness);
+  margin: 0.1em 0 0 0.5em;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.course-time {
+  background-color: #f6ecee;
+  color: var(--entan-red);
+  padding: 0.6em;
+  border-radius: 1em;
+}
+
+.course-time i {
+  margin-right: 0.5em;
+  font-size: 1.5em;
+}
+
+.course-time span {
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
 }
